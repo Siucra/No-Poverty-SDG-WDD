@@ -36,10 +36,10 @@
 	  </button>
 	  <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
 		<div class="navbar-nav">
-		  <a class="nav-item nav-link" href="#">Home</a>
+		  <a class="nav-item nav-link" href="index.html">Home</a>
 		  <a class="nav-item nav-link" href="#">About</a>
 		  <a class="nav-item nav-link" href="#">Contact</a>
-		  <a class="nav-item nav-link" href="#">FAQ</a>
+		  <a class="nav-item nav-link" href="faq.html">FAQ</a>
 		  <a class="nav-item nav-link" href="#">Targets</a>
 		  <a class="nav-item nav-link" href="#">Take Action</a>
 		  
@@ -149,6 +149,61 @@
 				</div>
 						
 			</div><!--END OF ACCORDION-->
+			<div class="container mt-5">
+				<form id="feedbackForm">
+				  <h3>Feedback Form</h3>
+				  <p>Please fill out this form to let the team know if you found this website helpful! We prioritise our customers' needs.</p>
+					
+					<!-- Name section -->
+				  <div class="mb-3">
+					<label for="name" class="form-label">Name <span class="required">*</span></label>
+					<input name="name" type="text" class="form-control" required id="name">
+				  </div>
+			
+					<!-- Email section -->
+				  <div class="mb-3">
+					<label for="email" class="form-label">Email <span class="required">*</span></label>
+					<input name="email" type="email" class="form-control" required id="email">
+				  </div>
+			
+				  <h4>Was this page helpful?</h4>
+				  
+				<!-- Yes/No radio buttons (only one can be selected) -->
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="response" id="yesresponse" required>
+				  <label class="form-check-label" for="yesresponse">Yes</label>
+				</div>
+			
+				<div class="form-check form-check-inline">
+				  <input class="form-check-input" type="radio" name="response" id="noresponse" required>
+				  <label class="form-check-label" for="noresponse">No</label>
+				</div>
+			
+				<!-- Response options to select -->
+				<div class="mb-3" id="textField" style="display: none;">
+				  <label for="course" class="form-label">Why?</label>
+				  <select id="mySelect" class="form-select">
+					<option>Webpage hard to navigate</option>
+					<option>Couldn't find my question</option>
+						<option>more option</option>
+						<option>another option</option>
+						<option>one more option</option>
+					<option value="misc">Other</option>
+				  </select>
+				  
+				  <input name="textbox" type="text" class="form-control mt-2" placeholder="Please specify">
+				</div>
+			
+				<!-- Terms and Conditions -->
+				<div class="form-check mb-3">
+				  <input class="form-check-input" type="checkbox" name="tandc" id="tandc" required>
+				  <label class="form-check-label" for="tandc">I agree to the Terms and Conditions <span class="required">*</span></label>
+				</div>
+			
+				<button type="submit" class="btn btn-primary" onclick="validateFeedback()">Submit</button>
+			  </form>
+
+			</div>
 
 		</div><!--END OF FAQCONTAINER-->
 	
@@ -206,6 +261,8 @@
           </div>
         </div>
 	  </section>
+
+	  
 	
 
 		  <!-- Section: Social -->

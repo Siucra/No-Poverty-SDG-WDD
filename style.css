@@ -1,4 +1,9 @@
-
+main{ /* Create equal spacing on left & right, limiting to 1200px */
+	margin-right: auto;
+	margin-left: auto; 
+	max-width: 1000px; 
+	background-color: lightgrey;
+}
 
 /*DENISE*/
 
@@ -11,18 +16,18 @@
   margin-bottom: 20px; /*spacing at the bottom*/
   padding: 10px; /*spacing at the sides*/
   object-fit: cover; /* avoids stretching the banner image*/
+}
 
+.indexcontainer-fluid .row{
+	overflow: hidden;
 }
-.indexcontainer .row{
-	padding-top: 25px;
-}
+
 
 
 #indexcontainers img {
-  width: auto;
-  height: 300px;
+  width: 380px;
+  height: auto;
   padding: 10px;
-  display: block; /*centers image*/
   margin-left: auto;
   margin-right: auto;
   
@@ -43,7 +48,6 @@
   width: 110px;  /* Adjust image size */
 }
 		
-
 .goals_list {
    position: relative;
    display: inline-block;
@@ -122,6 +126,14 @@
 		
 	}
     /*FAQ PAGE*/
+	.required{
+		color: red;
+	}
+
+	#feedbackForm{
+		background-color: lightgrey;
+		width: 700px;
+	}
 	/*
 
 	.faq_container { this will cause issues on mobile view
@@ -135,8 +147,6 @@
 		/*center?*/
 	}
 	
-	
-
 	.accordion-item .accordion-button:first-of-type {
 		border-top: 1px solid #ddd; /* Adds a line at the top */
 	}
@@ -165,8 +175,6 @@
 	.btn-instagram{
 		background-color: #ff3399;
 	}
-
-
 
 
 /*DENISE*/
