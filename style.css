@@ -130,14 +130,20 @@ main{ /* Create equal spacing on left & right, limiting to 1200px */
 		color: red;
 	}
 
-	#feedbackForm{
-		background-color: lightgrey;
-		width: 700px;
+	.feedbackForm{
+		background-color: yellow;
+		width: 800px;
+		margin: auto;/*center?*/
 	}
-	
+
+	.feedbackForm p, h3, label, input, h4{
+		padding-left: 10px;
+	}
+
 	.accordion{
-		max-width: 1000px;
-		/*center?*/
+		max-width: 1200px;
+		margin: auto;/*center?*/
+		padding: 5px;
 	}
 	
 	.accordion-item .accordion-button:first-of-type {

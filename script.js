@@ -31,6 +31,7 @@ window.onload = randomiseOptions; //when page reloads, call randomiseOptions Fun
 }
   document.addEventListener('DOMContentLoaded', function() {
     // Get the check box elements and the text field
+
     const yesResponse = document.getElementById('yesresponse');
     const noResponse = document.getElementById('noresponse');
     const textField = document.getElementById('textField');
@@ -63,4 +64,33 @@ window.onload = randomiseOptions; //when page reloads, call randomiseOptions Fun
     } else {
         alert('Thank you for your submission!');
     }
+    
+    /*
+      // Validation checks
+    if (!name) {
+        alert('Please enter your name.');
+        return;
+    }
+
+    if (!email) {
+        alert('Please enter your email.');
+        return;
+    }
+
+    if (!tandc) {
+        alert('You must agree to the Terms and Conditions.');
+        return;
+    }
+
+    if (!yesResponse && !noResponse) {
+        alert('Please select whether the page was helpful.');
+        return;
+    }
+
+    // If all checks pass
+    alert('Thank you for your submission!');
+    form.submit(); // Optionally allow form submission
+}
+
+    */
 }
