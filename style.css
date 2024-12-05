@@ -1,7 +1,7 @@
 main{ /* Create equal spacing on left & right, limiting to 1200px */
 	margin-right: auto;
 	margin-left: auto; 
-	max-width: 1000px; 
+	max-width: 1500px; 
 	background-color: lightgrey;
 }
 
@@ -21,8 +21,6 @@ main{ /* Create equal spacing on left & right, limiting to 1200px */
 .indexcontainer-fluid .row{
 	overflow: hidden;
 }
-
-
 
 #indexcontainers img {
   width: 380px;
@@ -117,6 +115,7 @@ main{ /* Create equal spacing on left & right, limiting to 1200px */
 		.goals_list img {
            width: 160px;
         }
+
 		.goals_list{/*fix later*/
 			display: flex;
 			flex-direction: column;
@@ -125,6 +124,7 @@ main{ /* Create equal spacing on left & right, limiting to 1200px */
 		}
 		
 	}
+
     /*FAQ PAGE*/
 	.required{
 		color: red;
@@ -134,14 +134,7 @@ main{ /* Create equal spacing on left & right, limiting to 1200px */
 		background-color: lightgrey;
 		width: 700px;
 	}
-	/*
-
-	.faq_container { this will cause issues on mobile view
-	   margin:0 auto;
-	   width:960px; 
-	}
-
-	*/
+	
 	.accordion{
 		max-width: 1000px;
 		/*center?*/
