@@ -112,9 +112,6 @@ main{ /* Create equal spacing on left & right, limiting to 1200px */
 	
 	/*center goal boxes*/
 	@media (max-width: 750px) {
-		.goals_list img {
-           width: 160px;
-        }
 
 		.goals_list{/*fix later*/
 			display: flex;
@@ -130,15 +127,7 @@ main{ /* Create equal spacing on left & right, limiting to 1200px */
 		color: red;
 	}
 
-	.feedbackForm{
-		background-color: yellow;
-		width: 800px;
-		margin: auto;/*center?*/
-	}
-
-	.feedbackForm p, h3, label, input, h4{
-		padding-left: 10px;
-	}
+	
 
 	.accordion{
 		max-width: 1200px;

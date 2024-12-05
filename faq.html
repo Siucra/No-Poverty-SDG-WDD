@@ -150,61 +150,59 @@
 						
 			</div><!--END OF ACCORDION-->
 			<div class="container mt-5">
-				<form class="feedbackForm">
-				  <h3>Feedback Form</h3>
-				  <p>Please fill out this form to let the team know if you found this website helpful! We prioritise our customers' needs.</p>
+				<form class="feedbackForm p-4 shadow rounded">
+					<h3 class="mb-3">Feedback Form</h3>
+					<p>Please fill out this form to let the team know if you found this website helpful! We prioritize our customers' needs.</p>
 					
-					<!-- Name section -->
-				  <div class="mb-3">
-					<label for="name" class="form-label">name<span class="required">*</span></label>
-					<input name="name" type="text" class="form-control" required id="name">
-				  </div>
+					<!-- Name Section -->
+					<div class="mb-3">
+						<label for="name" class="form-label">Name <span class="required text-danger">*</span></label>
+						<input name="name" type="text" class="form-control" required id="name" placeholder="Enter your name">
+					</div>
 			
-					<!-- Email section -->
-				  <div class="mb-3">
-					<label for="email" class="form-label">email<span class="required">*</span></label>
-					<input name="email" type="email" class="form-control" required id="email">
-				  </div>
+					<!-- Email Section -->
+					<div class="mb-3">
+						<label for="email" class="form-label">Email <span class="required text-danger">*</span></label>
+						<input name="email" type="email" class="form-control" required id="email" placeholder="Enter your email">
+					</div>
 			
-				  <h4>Was this page helpful?</h4>
-				  
-				<!-- Yes/No radio buttons (only one can be selected) -->
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="response" id="yesresponse" required>
-				  <label class="form-check-label" for="yesresponse">Yes</label>
-				</div>
+					<!-- Radio Buttons for Response -->
+					<h4 class="mb-3">Was this page helpful?</h4>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="response" id="yesresponse" required>
+						<label class="form-check-label" for="yesresponse">Yes</label>
+					</div>
+					<div class="form-check form-check-inline">
+						<input class="form-check-input" type="radio" name="response" id="noresponse" required>
+						<label class="form-check-label" for="noresponse">No</label>
+					</div>
 			
-				<div class="form-check form-check-inline">
-				  <input class="form-check-input" type="radio" name="response" id="noresponse" required>
-				  <label class="form-check-label" for="noresponse">No</label>
-				</div>
-				
+					<!-- Dropdown and Textbox -->
+					<div class="mt-4" id="textField" style="display: none;">
+						<label for="feedbackDropdown" class="form-label">Why?</label>
+						<select id="feedbackDropdown" class="form-select" onchange="randomiseOptions()">
+							<option value="">Select an option</option>
+							<option>Webpage hard to navigate</option>
+							<option>Couldn't find my question</option>
+							<option>1</option>
+							<option>2</option>
+							<option>3</option>
+							<option value="misc">Misc</option>
+						</select>
+						<input name="textbox" type="text" class="form-control mt-2" placeholder="Please specify">
+					</div>
 			
-				<!-- Response options to select -->
-				<div class="mb-3" id="textField" style="display: none;">
-				  <label for="course" class="form-label">Why?</label>
-				  <select id="feedbackDropdown" class="form-select" onchange="randomiseOptions()">
-					<option>Webpage hard to navigate</option>
-					<option>Couldn't find my question</option>
-						<option>1</option>
-						<option>2</option>
-						<option>3</option>
-					<option value="misc">misc</option>
-				  </select>
-				  
-				  <input name="textbox" type="text" class="form-control mt-2" placeholder="Please specify">
-				</div>
+					<!-- Terms and Conditions -->
+					<div class="form-check mb-4">
+						<input class="form-check-input" type="checkbox" name="tandc" id="tandc" required>
+						<label class="form-check-label" for="tandc">I agree to the Terms and Conditions <span class="required text-danger">*</span></label>
+					</div>
 			
-				<!-- Terms and Conditions -->
-				<div class="form-check mb-3">
-				  <input class="form-check-input" type="checkbox" name="tandc" id="tandc" required>
-				  <label class="form-check-label" for="tandc">I agree to the Terms and Conditions <span class="required">*</span></label>
-				</div>
-			
-				<button type="submit" class="btn btn-primary" onclick="validateFeedback()">Submit</button>
-			  </form>
+					<!-- Submit Button -->
+					<button type="submit" class="btn btn-primary w-100" onclick="validateFeedback()">Submit</button>
+				</form>
 			</div>
-		</div><!--END OF FAQCONTAINER-->
+			
 	
 	<!--MORE TEXT HERE GOING BLAHBLAH-->	
 
