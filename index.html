@@ -16,7 +16,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
 
 		<!--below bootstrap link-->
-		<link href="style.css" rel="stylesheet">
+		<link href="primary.css" rel="stylesheet">
 		<script src="script.js"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,66 +25,62 @@
 		<!--keywords for search engines-->
 		<meta name="keywords" content="description"><!--ADD!!!!!!!!!!-->
 		<meta name="author" content="Name"><!--enter name--><!--ADD!!!!!!!!!!-->
-		<meta name="description" content = "A simple webpage on ....."><!--ADD!!!!!!!!!!-->
-		
-	</head>
-	<!-- DENISE (END OF HEAD LINKS) -->
-	
-	<body>
-		<main>
-			<!-- DENISE (NAV BAR) -->
-			<!-- container holding nav bar -->
-			<div class="container-fluid">
-				<!-- navigation Bar -->		
-				<ul class="nav">
-					<li class="nav-item">
-						<a class="nav-link active" aria-current="page" href="index.html">Home
-						</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="about.html">About</a>
-					</li>
-					<li class="nav-item">
-					<a class="nav-link" href="contact.html">Contact</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="faq.html">FAQ</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="targets.html">Targets</a>
-					</li>
-					<li class="nav-item">
-						<a class="nav-link" href="takeaction.html">Take Action</a>
-					</li>
-				</ul>
-			</div>
+    </head>
+    
+    <body>
+        <nav> <!-- header & navigation bar @Daniel Shlusaver-->
+            <div id="nav-logo-container"> <!-- custom div needed for full width bg colour change -->
+                <div class="container p-3"> <!-- bootstrap container to limit content width -->
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <img id="emblem" src="images/emblem.png" alt="Sustainable Development Goal 1 Emblem Logo"> <!-- logo emblem -->
+                    </div>
+                </div>
+            </div>
 
-			<!-- DENISE (END OF NAV BAR) -->
-			
+            <div id="nav-pills-container">
+                <div class="container" id="nav-pills">
+                    <header class="d-flex justify-content-center py-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="index.html" class="nav-link button-text">Home</a></li>
+                            <li class="nav-item"><a href="about.html" class="nav-link button-text">About</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                            <li class="nav-item"><a href="faq.html" class="nav-link button-text">FAQ</a></li>
+                            <li class="nav-item"><a href="targets.html" class="nav-link button-text">Targets</a></li>
+                            <li class="nav-item"><a href="takeaction.html" class="nav-link button-text">Take Action</a></li>
+                        </ul>
+                    </header>
+                </div>
+            </div>
+
+            <div class="divider-bar"></div>
+        </nav>
+        
+        <main> <!-- main tag where all the content of the page will go -->
+				
 			<div class="container-fluid px-4 px-md-5">
 				<!-- BANNER IMAGE HERE -->
-				<img src="images/banners/noPovertyBanner.jpg" alt="noPovertyBanner" class="img-fluid w-100 overviewBanner mb-4">
+				<img src="images/banners/homebanner.png" alt="noPovertyBanner" class="img-fluid w-100 overviewBanner mb-4">
 				
 				<div id="indexcontainers">
 					<!-- First Row -->
 					<div class="row align-items-center mb-4">
-						<div class="col-lg-8">
+						<div class="col-lg-6">
 							<h1>What is No Poverty?</h1>
 							<p>No Poverty is one of the United Nations Sustainable Development Goals (SDG 1), with the aim to end extreme poverty for everyone everywhere by 2030. This goal aims to ensure that everyone, regardless of their background or location, has access to the basic necessities of life: food, clean water, shelter, education, and healthcare.</p>
 							<p>It focuses on lifting the most vulnerable communities (roughly 700 million people) out of poverty, particularly those living on less than $1.90 a day, which is considered the international poverty line.</p>
 							<p>Learn more on No Poverty statistics and how to take action <a href="takeaction.html">here</a></p>
 						</div>
-						<div class="col-lg-4">
-							<img src="images/overview-poverty1.jpg" alt="hand-reaching-out" class="img-fluid rounded">
+						<div class="col-lg-6">
+							<img class="container-image img-fluid w-100" src="images/overview-poverty1.jpg" alt="hand-reaching-out" class="img-fluid rounded">
 						</div>
 					</div>
 					
 					<!-- Second Row -->
 					<div class="row align-items-center mb-4">
-						<div class="col-lg-4">
-							<img src="images/overview-poverty2.jpg" alt="child-in-poverty" class="img-fluid rounded">
+						<div class="col-lg-6">
+							<img class="container-image img-fluid w-100" src="images/overview-poverty2.jpg" alt="child-in-poverty" class="img-fluid rounded">
 						</div>
-						<div class="col-lg-8">
+						<div class="col-lg-6">
 							<h2>How Does Poverty Affect Us?</h2>
 							<p>Poverty is not just an economic issue; it also has profound social and psychological impacts. Those living in poverty often lack access to education, healthcare, and adequate housing. This affects their ability to break the cycle of poverty, thus continuing inequality.</p>
 							<p>Additionally, poverty often leads to poor health, malnutrition, and social exclusion, which can hinder personal development and contribute to a lack of opportunities. Poverty also limits access to resources necessary for human dignity, such as clean water and sanitation, which increases vulnerability to diseases. Ultimately, poverty affects entire communities and nations, slowing economic growth, increasing social tensions, and exacerbating environmental challenges.</p>
@@ -275,88 +271,75 @@
 					</div>
 				</div>
 			</div>
+           
+        </main>
 
-			<!--DENISE (FOOTER) -->
-			<footer class="text-center text-white">
-			
-				<!-- Grid container -->
-				<div class="container"> 
-
-					<!-- Section for links -->
-					<section class="mt-5"> 
-						<!-- Grid row-->
-						<div class="row text-center d-flex justify-content-center pt-5">
-							<!-- Grid column -->
-							<div class="col-md-2">
-								<h6 class="text-uppercase font-weight-bold">
-									<a href="about.html" class="text-white">About Us</a>
-								</h6>
-							</div><!-- END OF Grid column -->
-					
-							<!-- Grid column -->
-							<div class="col-md-2">
-								<h6 class="text-uppercase font-weight-bold">
-									<a href="contact.html" class="text-white">Contact Us</a>
-								</h6>
-							</div><!-- END OF Grid column -->
-
-							<!-- Grid column -->
-							<div class="col-md-2">
-								<h6 class="text-uppercase font-weight-bold">
-									<a href="#!" class="text-white">Privacy Policy</a>
-								</h6>
-							</div><!-- END OF Grid column -->
-				
-							<!-- Grid column -->
-							<div class="col-md-2">
-								<h6 class="text-uppercase font-weight-bold">
-									<a href="faq.html" class="text-white">FAQ</a>
-								</h6>
-							</div> <!-- END OF Grid column -->
-
-						</div> <!-- END OF Grid row-->
-					</section><!-- END OF Section: Links -->
-
-					<hr class="mt-5"><!--horizontal line-->
-
-					<!-- Section: Text OPTIONAL!!!! -->
-					<section class="mb-5">
-						<div class="row d-flex justify-content-center">
-							<div class="col-lg-8">
-								<p>One step forward. Together, we can make a difference. Join the global effort to end poverty In all its form by 2030. Lets work to create a world where everyone is equal.
-								</p>
-							</div>
+        <footer class="text-center text-white"> <!-- DENISE (FOOTER) -->
+			<div class="container"> <!-- Grid container -->
+				<section class="mt-5"> <!-- Section for links -->
+					<div class="row text-center d-flex justify-content-center pt-5"> <!-- Grid row-->
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="about.html" class="text-white">About Us</a>
+							</h6>
 						</div>
-					</section>
 
-					<section class="mb-4"> <!-- Section: Social -->
-						<!-- Facebook -->
-						<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-facebook" href="#!" role="button">
-							<i class="fa fa-facebook-f"></i>
-						</a>
-						
-						<!-- Twitter -->
-						<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-twitter" href="#!" role="button">
-							<i class="fa fa-twitter"></i>
-						</a>
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="contact.html" class="text-white">Contact Us</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
 
-						<!-- Youtube -->
-						<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-youtube" href="#!" role="button">
-							<i class="fa fa-youtube"></i>
-						</a>
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="#!" class="text-white">Privacy Policy</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
+			
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="faq.html" class="text-white">FAQ</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
+					</div> <!-- END OF Grid row-->
+				</section> <!-- END OF Section: Links -->
 
-						<!-- Instagram -->
-						<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-instagram" href="#!" role="button">
-							<i class="fa fa-instagram"></i>
-						</a>
-					</section>
-				</div><!-- Grid container -->
-				
-				<!-- Copyright -->
+				<hr class="mt-5"> <!--horizontal line-->
 
-				<div class="text-center p-3">© 2024 Copyright: website name
-				</div>
-			</footer> <!-- DENISE (END OF FOOTER) --> 
-		
-	</body>
+				<section class="mb-5"> <!-- Section: Text OPTIONAL!!!! -->
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-8">
+							<p>One step forward. Together, we can make a difference. Join the global effort to end poverty In all its form by 2030. Lets work to create a world where everyone is equal.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="mb-4"> <!-- Section: Social -->
+					<!-- Facebook -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-facebook" href="#!" role="button">
+						<i class="fa fa-facebook-f"></i>
+					</a>
+					
+					<!-- Twitter -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-twitter" href="#!" role="button">
+						<i class="fa fa-twitter"></i>
+					</a>
+
+					<!-- Youtube -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-youtube" href="#!" role="button">
+						<i class="fa fa-youtube"></i>
+					</a>
+
+					<!-- Instagram -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-instagram" href="#!" role="button">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</section>
+			</div> <!-- Grid container -->
+			
+			<!-- Copyright -->
+			<div class="text-center p-3">© 2024 Copyright: No Poverty - SDG 1</div>
+		</footer> <!-- DENISE (END OF FOOTER) --> 
+    </body>
 </html>
