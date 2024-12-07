@@ -1,10 +1,9 @@
 <!DOCTYPE html>
+
 <html lang="en">
 	<head>
-		<title>Frequently Asked Questions</title><!--HOMEPAGE--><!--ADD!!!!!!!!!!-->
-		
-		<!-- DENISE (HEAD LINKS) -->
-		
+		<title>Frequently Asked Questions</title>
+	
 		<!--bootstrap for goals container-->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
@@ -12,7 +11,7 @@
 		<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet"/>
 
 		<!--below bootstrap link-->
-		<link href="style.css" rel="stylesheet">
+		<link href="primary.css" rel="stylesheet">
 		<script src="script.js"></script>
 
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,39 +21,39 @@
 		<meta name="keywords" content="description"><!--ADD!!!!!!!!!!-->
 		<meta name="author" content="Name"><!--enter name--><!--ADD!!!!!!!!!!-->
 		<meta name="description" content = "A simple webpage on ....."><!--ADD!!!!!!!!!!-->
-	</head>
+    </head>
+    
+    <body>
+        <nav> <!-- header & navigation bar @Daniel Shlusaver-->
+            <div id="nav-logo-container"> <!-- custom div needed for full width bg colour change -->
+                <div class="container p-3"> <!-- bootstrap container to limit content width -->
+                    <div class="container d-flex align-items-center justify-content-center">
+                        <img id="emblem" src="images/emblem.png" alt="Sustainable Development Goal 1 Emblem Logo"> <!-- logo emblem -->
+                    </div>
+                </div>
+            </div>
 
-	<!-- DENISE (END OF HEAD LINKS) -->
-		
-	<body>
+            <div id="nav-pills-container">
+                <div class="container" id="nav-pills">
+                    <header class="d-flex justify-content-center py-3">
+                        <ul class="nav nav-pills">
+                            <li class="nav-item"><a href="index.html" class="nav-link button-text">Home</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link button-text">About</a></li>
+                            <li class="nav-item"><a href="contact.html" class="nav-link active" aria-current="page">Contact</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link button-text">FAQ</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link button-text">Targets</a></li>
+                            <li class="nav-item"><a href="#" class="nav-link button-text">Take Action</a></li>
+                        </ul>
+                    </header>
+                </div>
+            </div>
 
-		<!-- DENISE (NAV BAR) -->
-		<!-- container holding nav bar -->
-	<nav class="navbar navbar-expand-lg navbar-light bg-light">
-	 <!--website name here?-->
-	  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-		<span class="navbar-toggler-icon"></span>
-	  </button>
-	  <div class="navbar-collapse collapse" id="navbarNavAltMarkup">
-		<div class="navbar-nav">
-		  <a class="nav-item nav-link" href="index.html">Home</a>
-		  <a class="nav-item nav-link" href="#">About</a>
-		  <a class="nav-item nav-link" href="#">Contact</a>
-		  <a class="nav-item nav-link" href="faq.html">FAQ</a>
-		  <a class="nav-item nav-link" href="#">Targets</a>
-		  <a class="nav-item nav-link" href="#">Take Action</a>
-		</div>
-	  </div>
-	</nav>
-	<main>
-		<!-- DENISE (END OF NAV BAR) -->
+            <div class="divider-bar"></div>
+        </nav>
+        <main> <!-- main tag where all the content of the page will go -->
+
 	<div class="container-fluid px-4 px-md-5">
 		<div class="faqcontainer px-4 px-md-5">
-		
-			<!--MAKE IMAGE BACKGROUND -->
-			<!--
-			<img src="Images/test.png" alt ="bannerPlaceHolder" class="testBanner">
-			-->
 
 			<h1>Frequently Asked Questions (FAQ) - No Poverty</h1>
 			<p> Our FAQ section provides answers to common questions about poverty, its causes, and the steps we can take to eradicate it. Whether you’re looking for information on what poverty is, how it affects communities worldwide, or how you can get involved, we’ve got you covered. Together, we can make a difference.</p>
@@ -204,86 +203,75 @@
 		</div>	
 			
 	
-	<!--MORE TEXT HERE GOING BLAHBLAH-->	
-</main>
-	<!--DENISE (FOOTER)-->
-  <footer class="text-center text-white">  <!-- Footer -->
-  
-    <div class="container"><!-- Grid container -->
-      <section class="mt-5"> <!-- Section for links -->
-	  
-        <!-- Grid row-->
-        <div class="row text-center d-flex justify-content-center pt-5">
-		
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">About Us</a>
-            </h6>
-          </div><!-- END OF Grid column -->
-		  
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Contact Us</a>
-            </h6>
-          </div><!-- END OF Grid column -->
+	<!--MORE TEXT HERE GOING BLAHBLAH-->
+        </main>
 
-          <!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Privacy Policy</a>
-            </h6>
-          </div><!-- END OF Grid column -->
-		
-		<!-- Grid column -->
-          <div class="col-md-2">
-            <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">FAQ</a>
-            </h6>
-          </div><!-- END OF Grid column -->
+        <footer class="text-center text-white"> <!-- DENISE (FOOTER) -->
+			<div class="container"> <!-- Grid container -->
+				<section class="mt-5"> <!-- Section for links -->
+					<div class="row text-center d-flex justify-content-center pt-5"> <!-- Grid row-->
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="about.html" class="text-white">About Us</a>
+							</h6>
+						</div>
 
-        </div><!-- END OF Grid row-->
-		
-      </section><!--  END OF Section: Links -->
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="contact.html" class="text-white">Contact Us</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
 
-      <hr class="mt-5"><!--horizontal line-->
-
-      <!-- Section: Text OPTIONAL!!!! -->
-	  <section class="mb-5">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8">
-            <p>Find answers to common questions about poverty, its causes, and how we can all help make a difference. Together, we can work toward ending poverty for good.
-            </p>
-          </div>
-        </div>
-	  </section>
-
-		  <!-- Section: Social -->
-	<section class="mb-4">
-      <!-- Facebook -->
-		<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-facebook" href="#!" role="button">
-		<i class="fa fa-facebook-f"></i></a>
-
-      <!-- Twitter -->
-      <a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-twitter" href="#!" role="button">
-	  <i class="fa fa-twitter"></i></a>
-
-      <!-- Youtube -->
-      <a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-youtube" href="#!" role="button">
-	  <i class="fa fa-youtube"></i></a>
-
-      <!-- Instagram -->
-      <a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-instagram" href="#!" role="button"><i class="fa fa-instagram"></i></a>
-    </section>
-		<!-- Copyright -->
-		<div class="text-center p-3">
-		  © 2024 Copyright:website name
-		</div>	
-		</div><!-- Grid container -->
-
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="#!" class="text-white">Privacy Policy</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
 			
-	  </footer>
-	  <!--DENISE (END OF FOOTER)-->
-	</body>
+						<div class="col-md-2"> <!-- Grid column -->
+							<h6 class="text-uppercase font-weight-bold">
+								<a href="faq.html" class="text-white">FAQ</a>
+							</h6>
+						</div> <!-- END OF Grid column -->
+					</div> <!-- END OF Grid row-->
+				</section> <!-- END OF Section: Links -->
+
+				<hr class="mt-5"> <!--horizontal line-->
+
+				<section class="mb-5"> <!-- Section: Text OPTIONAL!!!! -->
+					<div class="row d-flex justify-content-center">
+						<div class="col-lg-8">
+							<p>One step forward. Together, we can make a difference. Join the global effort to end poverty In all its form by 2030. Lets work to create a world where everyone is equal.
+							</p>
+						</div>
+					</div>
+				</section>
+
+				<section class="mb-4"> <!-- Section: Social -->
+					<!-- Facebook -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-facebook" href="#!" role="button">
+						<i class="fa fa-facebook-f"></i>
+					</a>
+					
+					<!-- Twitter -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-twitter" href="#!" role="button">
+						<i class="fa fa-twitter"></i>
+					</a>
+
+					<!-- Youtube -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-youtube" href="#!" role="button">
+						<i class="fa fa-youtube"></i>
+					</a>
+
+					<!-- Instagram -->
+					<a data-mdb-ripple-init class="btn text-white btn-floating m-2 btn-instagram" href="#!" role="button">
+						<i class="fa fa-instagram"></i>
+					</a>
+				</section>
+			</div> <!-- Grid container -->
+			
+			<!-- Copyright -->
+			<div class="text-center p-3">© 2024 Copyright: No Poverty - SDG 1</div>
+		</footer> <!-- DENISE (END OF FOOTER) --> 
+    </body>
 </html>
