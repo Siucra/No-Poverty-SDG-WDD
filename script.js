@@ -1,6 +1,53 @@
-/*DENISE B */
+/*DENISE BALASMEH */
 
-/* FAQ PAGE FORM JAVASCRIPT*/
+/*INDEX PAGE JAVASCRIPT*/
+
+document.addEventListener('DOMContentLoaded', () => {
+
+      //gets anchor tag id and stores it in variable jsHoverLinkAction
+      const jsHoverLinkAction = document.getElementById('indexHoverLinkAction');
+    //gets anchor tag id and stores it in variable jsHoverLinkTarget
+  const jsHoverLinkTarget = document.getElementById('indexHoverLinkTarget');
+
+
+
+
+  if (jsHoverLinkAction) {//if jsHoverLinkAction value is true, execute:
+    jsHoverLinkAction.addEventListener('mouseenter', () => {
+      //when mouse hovers over, change background colour
+        jsHoverLinkAction.style.backgroundColor = '#ff5e5e';
+        jsHoverLinkAction.style.fontStyle = 'italic';
+
+    });
+    jsHoverLinkAction.addEventListener('mouseleave', () => {
+       //else (when mouse doesnt hover) remove background colour
+        jsHoverLinkAction.style.backgroundColor = '';
+        jsHoverLinkAction.style.fontStyle = '';
+    });
+} 
+  
+  if (jsHoverLinkTarget) {//if jsHoverLinkTarget value is true, execute:
+      jsHoverLinkTarget.addEventListener('mouseenter', () => {
+        //when mouse hovers over, change background colour
+          jsHoverLinkTarget.style.backgroundColor = '#ff5e5e';
+          jsHoverLinkTarget.style.fontStyle = 'italic';
+
+      });
+
+      jsHoverLinkTarget.addEventListener('mouseleave', () => {
+        //else (when mouse doesnt hover) remove background colour
+          jsHoverLinkTarget.style.backgroundColor = '';
+          jsHoverLinkTarget.style.fontStyle = '';
+      });
+  } 
+
+});//end
+
+/*FAQ PAGE JAVASCRIPT */
+
+
+
+/* FEEDBACK FORM */
 window.onload = randomiseOptions; //when page reloads, call randomiseOptions Function
 
   function randomiseOptions() {
@@ -32,12 +79,9 @@ window.onload = randomiseOptions; //when page reloads, call randomiseOptions Fun
   document.addEventListener('DOMContentLoaded', function() {
     // Get the check box elements and the text field
 
-
-
     const yesResponse = document.getElementById('yesresponse');
     const noResponse = document.getElementById('noresponse');
     const textField = document.getElementById('textField');
-
 
     // Event listener for the No checkbox
     noResponse.addEventListener('change', toggleTextField);
