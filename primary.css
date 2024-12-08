@@ -42,53 +42,26 @@
 /* Index Page CSS @Denise Balasmeh */
 
 .overviewBanner {
-    width: 100%;
-    height: auto; /* adjusts the height automatically for width height ratio */
     margin-top: 10px; /*spacing at the top*/
     margin-bottom: 20px; /*spacing at the bottom*/
-    padding: 10px; /*spacing at the sides*/
-    object-fit: cover; /* avoids stretching the banner image*/
 }
 
-.indexcontainer .row{
-    padding-top: 25px;
-}
-  
 #indexcontainers img {
-    width: auto;
-    height: 300px;
     padding: 10px;
-    display: block; /*centers image*/
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .goalscontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 20px;
-}
-              
-.goals_list img {
-    width: 110px;  /* Adjust image size */
+    padding: 30px;
 }
 
 .goals_list {
-    position: relative;
-    display: inline-block;
     padding: 10px;
     border-radius: 5px;
 }
   
-.goals_list a {
-    display: block;
-    position: relative;
+.goals_list a { 
+    display: block; /*makes entire block area clickable*/
+    position: relative; /*moves textbox slightly*/
 }
 
 .goals_list:hover { 
@@ -97,9 +70,9 @@
 
 /* The text that will appear inside the image */
 .highlight-text {
-    position: absolute;
-    top: 50%; /* Center the text vertically */
-    left: 50%; /* Center the text horizontally */
+    position: absolute; /*able to move textbox anywhere*/
+    top: 50%; /* Center the textbox vertically */
+    left: 50%; /* Center the textbox horizontally */
     transform: translate(-50%, -50%); /* Perfect centering */
     color: white;
     font-size: 20px;
@@ -107,38 +80,33 @@
     padding: 10px 20px;
     background-color: rgba(0, 0, 0, 0.4); /* Semi-transparent background for contrast */
     border-radius: 5px;
-    opacity: 0; /* Initially hidden */
+    opacity: 0; /* Initially hidden, set to false */
     transition: opacity 0.3s ease, background-color 0.3s ease; /* Smooth transition */
 }
 
 /* Hover effect to make text visible */
 .goals_list:hover .highlight-text {
-    opacity: 1; /* Show the text on hover */
+    opacity: 1; /* Show the text on hover, set to true */
     background-color: rgba(0, 0, 0, 0.7); /* Darker background when highlighted */
     animation: slideUp 0.5s ease-out forwards; /* Trigger slide-up animation */
 }
 
 /* Slide-up animation keyframes */
-@keyframes slideUp {0% {
+@keyframes slideUp {
+    0% {
     transform: translateX(-50%) translateY(50px); /* Start below the image */
     opacity: 0; /* Start invisible */
-    } 100% {
+    } 
+    100% {
         transform: translateX(-50%) translateY(500); /* Slide into place */
         opacity: 3; /* Fade in */
     }
 }
-            
-/* Keyframes for the circular outline animation */
-@keyframes outlineCircle {0% {
-    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.2); /* Initial state: no outline */
-    } 100% {
-        box-shadow: 0 0 0 15px rgba(0, 0, 0, 0.2); /* Final state: circular outline */
-    }
-}
 
+/*FAQ PAGE CSS @Denise Balasmeh*/
+            
 .feedbackForm{
     background-color: white;
-
 }
 
 /* Footer CSS @Denise Balasmeh */

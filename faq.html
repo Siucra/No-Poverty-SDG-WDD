@@ -47,22 +47,17 @@
                     </header>
                 </div>
             </div>
-
             <div class="divider-bar"></div>
         </nav>
-        <main> <!-- main tag where all the content of the page will go -->
+    <main> 
 
 	<div class="container-fluid px-4 px-md-5">
 		<div class="faqcontainer px-4 px-md-5">
-
 			<h1>Frequently Asked Questions (FAQ) - No Poverty</h1>
 			<p> Our FAQ section provides answers to common questions about poverty, its causes, and the steps we can take to eradicate it. Whether you’re looking for information on what poverty is, how it affects communities worldwide, or how you can get involved, we’ve got you covered. Together, we can make a difference.</p>
 
 			<!--ACCORDION (DROPDOWN WITH QUESTION AND ANSWER)-->
-			
 			<!--Accordion box 1-->
-			
-			<!--JAVASCRIPT DOM: a word in the question is highlighted in answer box-->
 			<div class="accordion accordion-flush" id="accordionFlushExample">
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingOne">
@@ -91,7 +86,6 @@
 				</div>
 				
 				<!--Accordion box 3 -->
-				
 				<div class="accordion-item">
 					<h2 class="accordion-header" id="flush-headingThree">
 						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">What is poverty line? Is the poverty line the same in every country?</button>
@@ -141,22 +135,23 @@
 						</div>
 				</div>
 						
-			</div><!--END OF ACCORDION-->
+			</div><!--END OF ACCORDION CONTAINER-->
+
 			<div class="container mt-5">
-				<form class="feedbackForm p-4 shadow rounded">
+				<form class="feedbackForm p-4 shadow rounded" id="feedbackForm">
 					<h3 class="mb-3">Feedback Form</h3>
 					<p>Please fill out this form to let the team know if you found this website helpful! We prioritize our customers' needs.</p>
 					
 					<!-- Name Section -->
 					<div class="mb-3">
-						<label for="name" class="form-label">Name <span class="required text-danger">*</span></label>
-						<input name="username" type="text" class="form-control" required id="username" placeholder="Enter your name">
+						<label for="username" class="form-label">Name<span class="required text-danger">*</span></label>
+						<input name="username" type="text" class="form-control" required id="username" placeholder="Enter your Name">
 					</div>
 			
 					<!-- Email Section -->
 					<div class="mb-3">
-						<label for="email" class="form-label">Email <span class="required text-danger">*</span></label>
-						<input name="email" type="email" class="form-control" required id="email" placeholder="Enter your email">
+						<label for="email" class="form-label">Email<span class="required text-danger">*</span></label>
+						<input name="email" type="email" class="form-control" required id="email" placeholder="Enter your Email">
 					</div>
 			
 					<!-- Radio Buttons for Response -->
@@ -180,7 +175,7 @@
 							<option>There were technical issues.</option>
 							<option value="misc">Other</option>
 						</select>
-						<input name="textbox" type="text" class="form-control mt-2" placeholder="Please specify">
+						<input name="textbox" type="text" class="form-control mt-2" placeholder="Please Specify">
 					</div>
 			
 					<!-- Terms and Conditions -->
@@ -195,10 +190,7 @@
 			</div>
 		</div>	
 	</div>	
-	
-	<!--MORE TEXT HERE GOING BLAHBLAH-->
-        </main>
-
+     </main>
         <footer class="text-center text-white"> <!-- DENISE (FOOTER) -->
 			<div class="container"> <!-- Grid container -->
 				<section class="mt-5"> <!-- Section for links -->
