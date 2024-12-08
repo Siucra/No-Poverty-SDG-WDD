@@ -57,9 +57,9 @@ window.onload = randomiseOptions; //when page reloads, call randomiseOptions Fun
    
   const optionsArray = Array.from(dropdown.options);//forms one array from dropdown options (including misc)
   
-  const miscOption = optionsArray.find(option => option.text === "misc"); //forms another array and specifically looks for "misc" text value through the option list
+  const miscOption = optionsArray.find(option => option.text === "Other"); //forms another array and specifically looks for "misc" text value through the option list
   
-  const otherOptions = optionsArray.filter(option => option.text !== "misc"); //forms another array and specifically excludes "misc" option from the option list
+  const otherOptions = optionsArray.filter(option => option.text !== "Other"); //forms another array and specifically excludes "misc" option from the option list
 
   // Shuffle all options except misc using math.random
   const shuffledArray = otherOptions.sort(() => Math.random() - 0.5); //50% chance the order remains(postive) or shuffles (negative)

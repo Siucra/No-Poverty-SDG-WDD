@@ -140,20 +140,6 @@
     background-color: white;
 
 }
- /*END*/
-      
-/*center goal boxes*/
-@media (max-width: 750px) {
-    .goals_list img {
-        width: 160px;
-    }
-    .goals_list{/*fix later*/
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-    }
-}
 
 /* Footer CSS @Denise Balasmeh */
 
